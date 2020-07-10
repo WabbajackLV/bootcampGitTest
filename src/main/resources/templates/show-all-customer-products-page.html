@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<body>
+
+	<p th:text= "'Hello ' + ${innerObjectCust} + ', your shopping cart: '"> </p>
+	<table>
+	<tr th:each = "product: ${innerObjectProd}" >
+		<td th:text="${product.getTitle()}"></td>
+		<td th:text="${product.getPrice()}"></td>
+		<td th:text="${product.getType()}"></td>
+	</tr>
+	</table>
+</body>
+</html>

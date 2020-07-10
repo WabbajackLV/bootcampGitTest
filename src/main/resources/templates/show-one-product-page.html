@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<body>
+	<p> My Product </p>
+	<p th:text = "${innerObject.getTitle()}"/> 
+	<p th:text = "${innerObject.getPrice()}"/> 
+	<p th:text = "${innerObject.toString()}"/>
+</body>
+</html>

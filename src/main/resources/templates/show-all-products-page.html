@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<body>
+	<p> My Product </p>
+	<table>
+	<tr th:each = "product: ${innerObject}" >
+		<td th:text="${product.getTitle()}"></td>
+		<td th:text="${product.getPrice()}"></td>
+		<td th:text="${product.getType()}"></td>
+	</tr>
+	</table>
+</body>
+</html>
