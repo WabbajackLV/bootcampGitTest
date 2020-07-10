@@ -97,6 +97,11 @@ public class ProductController {
 		}
     }
     
+    @GetMapping("/gitTest")
+    public String getGitTest() {
+    	return "hello-page";
+    }
+    
   
 	
 }
